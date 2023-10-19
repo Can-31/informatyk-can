@@ -1,1 +1,2 @@
 # informatyk-can
+alican kaya
