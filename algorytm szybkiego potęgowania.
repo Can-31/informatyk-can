@@ -1,0 +1,14 @@
+def szybkie_potegowanie(a, n):
+    wynik = 1
+    podstawa = a
+    while n > 0:
+        if n % 2 == 1:
+            wynik = wynik * podstawa
+        podstawa = podstawa * podstawa
+        n = n // 2
+    return wynik
+
+# wywołanie i prezentacja wyniku
+a = int(input("Podaj podstawę a: "))
+n = int(input("Podaj wykładnik n (>=0): "))
+print("Wynik:", szybkie_potegowanie(a, n))
