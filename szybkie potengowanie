@@ -1,0 +1,25 @@
+public class Main {
+
+    public static long fastPower(long a, long b) {
+        long wynik = 1;
+
+        while (b > 0) {
+            if (b % 2 == 1) {
+                wynik *= a;    
+            }
+            a *= a;             
+            b /= 2;           
+        }
+
+        return wynik;
+    }
+
+    public static void main(String[] args) {
+        long podstawa = 3;
+        long wykladnik = 5;
+
+        long wynik = fastPower(podstawa, wykladnik);
+
+        System.out.println(podstawa + "^" + wykladnik + " = " + wynik);
+    }
+}
