@@ -1,0 +1,37 @@
+public class Main {
+
+    
+    public static int binarySearch(int[] tab, int szukana) {
+        int lewo = 0;
+        int prawo = tab.length - 1;
+
+        while (lewo <= prawo) {
+            int srodek = (lewo + prawo) / 2;
+
+            if (tab[srodek] == szukana) {
+                return srodek; 
+            }
+
+            if (tab[srodek] < szukana) {
+                lewo = srodek + 1; 
+            } else {
+                prawo = srodek - 1; 
+            }
+        }
+
+        return -1;
+    }
+
+    public static void main(String[] args) {
+        int[] liczby = {1, 3, 5, 7, 9, 11, 13};
+        int cel = 7;
+
+        int wynik = binarySearch(liczby, cel);
+
+        if (wynik != -1) {
+            System.out.println("Znaleziono liczbę " + cel + " na indeksie " + wynik);
+        } else {
+            System.out.println("Nie znaleziono liczby " + cel);
+        }
+    }
+}
