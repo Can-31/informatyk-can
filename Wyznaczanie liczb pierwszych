@@ -1,6 +1,6 @@
 public class Main {
 
-    // Funkcja sprawdzająca, czy liczba jest pierwsza
+    
     public static boolean czyPierwsza(int n) {
         if (n < 2) return false;        
 
