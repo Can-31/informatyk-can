@@ -1,0 +1,4 @@
+liczba = int(input("Podaj liczbę dziesiętną: "))
+wynik = bin(liczba)
+print("Liczba w systemie binarnym:", wynik[2:])
+ 
