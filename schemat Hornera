@@ -1,0 +1,6 @@
+a = [2, -6, 2, -1]  # współczynniki wielomianu
+x = int(input("Podaj x: "))
+wynik = a[0]
+for i in range(1, len(a)):
+   wynik = wynik * x + a[i]
+print("Wynik:", wynik)
