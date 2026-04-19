@@ -1,0 +1,13 @@
+def f(x):
+   return x*x - 4
+a = float(input("Podaj a: "))
+b = float(input("Podaj b: "))
+while (b - a) > 0.001:
+   s = (a + b) / 2
+   if f(s) == 0:
+       break
+   if f(a) * f(s) < 0:
+       b = s
+   else:
+       a = s
+print("Miejsce zerowe:", s)
