@@ -1,4 +1,10 @@
 liczba = int(input("Podaj liczbę dziesiętną: "))
-wynik = bin(liczba)
-print("Liczba w systemie binarnym:", wynik[2:])
- 
+
+binarna = ""
+
+while liczba > 0:
+    reszta = liczba % 2
+    binarna = str(reszta) + binarna
+    liczba = liczba // 2
+
+print("Liczba w systemie binarnym:", binarna)
