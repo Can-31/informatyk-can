@@ -4,8 +4,8 @@ while len(tab) > 1:
     srodek = len(tab) // 2
 
     lewa = tab[:srodek]
-    prawa = tab[srodek:]
-
+    prawa = tab[srodek:] 
+    
     wynik = []
 
     i = 0
